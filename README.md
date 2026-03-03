@@ -1,7 +1,7 @@
 ### Crabis
 
-Crabis is a minimal Redis-like key/value store written in 
-![Rust](https://img.shields.io/badge/Rust-%23f84c00.svg?logo=rust&logoColor=white)
+Crabis is a minimal Redis-like key/value store written in
+![Rust](https://img.shields.io/badge/Rust-%23f84c00.svg?logo=rust&logoColor=white).
 
 It listens on the default Redis port (6379) and supports a tiny subset of the Redis protocol.
 
@@ -28,10 +28,10 @@ It listens on the default Redis port (6379) and supports a tiny subset of the Re
 
 Crabis uses a `TcpListener` from `tokio` to accept incoming TCP connections on port 6379. 
 
-Each connection is handled in its own asynchronous using `tokio::spawn`, so multiple clients can be served concurrently without blocking the main thread.
+Each connection is handled in its own asynchronous task using `tokio::spawn`, so multiple clients can be served concurrently without blocking the main thread.
 
 For storage, it relies on a `DashMap`, a concurrent hash map.
-It means multiple tasks can read and write keys at the same time safely and efficiently, without manually managing locks.  
+This means multiple tasks can read and write keys at the same time safely and efficiently, without manually managing locks.  
 
 ### Prerequisites
 
@@ -55,3 +55,8 @@ In another terminal, you can connect with:
 ```bash
 redis-cli -h 127.0.0.1 -p 6379
 ```
+
+### Q&A
+
+**Q: Why “Crabis”? What is this name?**  
+**A:** The project is inspired by Redis (its name contains “RED”), and since it’s written in Rust, which is associated with the color orange, I first thought about calling it “Orangeis,” but that sounded a bit odd. Since Rust’s mascot is an orange crab, I came up with “Crabis.”
