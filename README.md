@@ -59,4 +59,4 @@ redis-cli -h 127.0.0.1 -p 6379
 ### Q&A
 
 **Q: Why “Crabis”? What is this stupid name?**  
-**A:** The project is inspired by Redis (its name contains “RED”), and since it’s written in Rust, which is associated with the color orange, I first thought about calling it “Orangeis,” but that sounded a bit odd. Since Rust’s mascot is an orange crab, I came up with “Crabis.”
+**A:** The project is inspired by Redis (it contains `“red”`), and since it’s written in Rust, which is associated with the color orange, I first thought about calling it `“Orangeis"`, but that sounded a bit odd. Since Rust’s mascot is an orange crab, I came up with “Crabis.”
