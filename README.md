@@ -1,6 +1,6 @@
 ### Crabis
 
-Crabis is a minimal Redis-like key/value store written in
+A minimal Redis-like key/value store written in
 ![Rust](https://img.shields.io/badge/Rust-%23f84c00.svg?logo=rust&logoColor=white).
 
 It listens on the default Redis port (6379) and supports a tiny subset of the Redis protocol.
