@@ -19,7 +19,10 @@ It listens on the default Redis port (6379) and supports a tiny subset of the Re
   Retrieves the value for a given key or returns a null bulk string if it does not exist.  
   **Example**: `GET mykey` → `$5\r\nhello\r\n`
 
-This project is meant as a learning playground to explore async Rust (`tokio`) and basic network servers.
+### Example
+
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/1cc80ab9-95c6-44a6-9df6-66b684355ee7" />
+
 
 ### How it works
 
@@ -52,6 +55,3 @@ In another terminal, you can connect with:
 ```bash
 redis-cli -h 127.0.0.1 -p 6379
 ```
-
-### Example
-
