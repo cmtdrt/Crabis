@@ -30,6 +30,10 @@ Each connection is handled in its own asynchronous using `tokio::spawn`, so mult
 For storage, it relies on a `DashMap`, a concurrent hash map.
 It means multiple tasks can read and write keys at the same time safely and efficiently, without manually managing locks.  
 
+### Prerequisites
+
+- `redis-cli` installed
+
 ### Getting started
 
 From the project root, you can build and run the server with:
@@ -42,3 +46,12 @@ From the project root, you can build and run the server with:
   - `make start`
 
 Crabis now listens on `127.0.0.1:6379`.
+
+In another terminal, you can connect with:
+
+```bash
+redis-cli -h 127.0.0.1 -p 6379
+```
+
+### Example
+
