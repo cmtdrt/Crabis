@@ -56,6 +56,14 @@ In another terminal, you can connect with:
 redis-cli -h 127.0.0.1 -p 6379
 ```
 
+You can also enable the **Append Only File (AOF)** mode to persist `SET` commands to disk:
+
+```bash
+cargo run -- AOF
+```
+
+In AOF mode, every `SET key value` is appended to a log file so the in-memory store can be reconstructed on restart.
+
 ### Q&A
 
 **Q: Why “Crabis”? What is this stupid name?**  
