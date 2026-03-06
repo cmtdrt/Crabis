@@ -9,15 +9,15 @@ It listens on the default Redis port (6379) and supports a tiny subset of the Re
 
 - **HEALTH**  
   Simple health check.  
-  **Example**: `HEALTH` → `+OK`
+  **Example**: `HEALTH` → `OK`
 
 - **SET key value**  
   Stores a string value under a string key.  
-  **Example**: `SET mykey hello` → `+OK`
+  **Example**: `SET mykey hello` → `OK`
 
 - **GET key**  
   Retrieves the value for a given key or returns a null bulk string if it does not exist.  
-  **Example**: `GET mykey` → `$5\r\nhello\r\n`
+  **Example**: `GET mykey` → `hello`
 
 ### Example
 
